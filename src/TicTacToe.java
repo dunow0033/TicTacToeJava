@@ -31,7 +31,7 @@ public class TicTacToe {
 			placePiece(gameBoard, playerPos, "player");
 			
 			String result = checkWinner();
-			if(result.contains("wins") || result.contains("won"))
+			if(result.length() > 0)
 			{
 				System.out.println(result);
 				break;
@@ -47,7 +47,7 @@ public class TicTacToe {
 			printGameBoard(gameBoard);
 			
 			result = checkWinner();
-			if(result.contains("wins") || result.contains("won"))
+			if(result.length() > 0)
 			{
 				System.out.println(result);
 				break;
